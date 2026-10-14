@@ -1,0 +1,25 @@
+{
+  "name": "etender-api",
+  "version": "1.0.0",
+  "description": "E-Tender Lite - Express + Socket.IO + MySQL API",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node scripts/initDb.js",
+    "db:seed": "node scripts/seed.js",
+    "db:reset": "node scripts/initDb.js && node scripts/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.3",
+    "node-cron": "^3.0.3",
+    "socket.io": "^4.8.1"
+  }
+}
